@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231016222046">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="#" class="header__logo">
+						<img src="img/src/logo.svg" alt="Logo image" />
+					</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__body">
+						<li class="menu__item">
+							<a href="#" class="menu__link" data-goto=".hero">Home</a>
+						</li>
+						<li class="menu__item menu__item-icon">
+							<a href="#" class="menu__link" data-goto=".products">Product</a>
+							<ul class="menu__item-submenu submenu">
+								<li class="submenu__item">
+									<a href="#" class="submenu__link">HTML</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#" class="submenu__link">CSS</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#" class="submenu__link">JS</a>
+								</li>
+								<li class="submenu__item">
+									<a href="#" class="submenu__link">PHP</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link" data-goto=".some">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link" data-goto=".footer">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__action action">
+					<a href="#" class="action__icon" data-popup="#popup">
+						<img src="img/icons/search.svg" alt="Image search" />
+					</a>
+					<a href="#" class="action__icon" data-da=".menu__body, 767">
+						<img src="img/icons/profile.svg" alt="Image profile" />
+					</a>
+					<div class="action__icon icon-menu">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__content content-hero">
+						<h1 class="content-hero__title">
+							Help you to Make modern Funiture
+						</h1>
+						<p class="content-hero__text">
+							We help you to create organize your room to be more cozy,
+							design by professional interior designer
+						</p>
+						<a href="#" class="content-hero__button button">See Our Product</a>
+					</div>
+					<div class="hero__slider-swiper swiper">
+						<div class="hero__swiper-wrapper swiper-wrapper">
+							<div class="hero__swiper-slide swiper-slide">
+								<div class="hero__image-ibg">
+									<picture><source srcset="img/src/hero_rectangle.webp" type="image/webp"><img src="img/src/hero_rectangle.jpg" alt="Image living room" /></picture>
+								</div>
+							</div>
+							<div class="hero__swiper-slide swiper-slide">
+								<div class="hero__image-ibg">
+									<picture><source srcset="img/src/contain_some_big.webp" type="image/webp"><img src="img/src/contain_some_big.jpg" alt="Image living room" /></picture>
+									<div class="hero__decor"></div>
+								</div>
+							</div>
+						</div>
+						<div class="hero__arrows">
+							<div class="hero__arrow-right swiper-button-next">
+								<img src="img/icons/arrow_left.svg" alt="Icon arrow" />
+							</div>
+							<div class="hero__arrow-left swiper-button-prev">
+								<img src="img/icons/arrow_left.svg" alt="Icon arrow" />
+							</div>
+						</div>
+					</div>
+					<div class="hero__decor"></div>
+				</div>
+			</section>
+			<div class="page__company company">
+				<div class="company__container">
+					<h3 class="company__title">Some of our trusted company</h3>
+					<div class="company__block block-company">
+						<div class="block-company__image">
+							<picture><source srcset="img/icons/google.webp" type="image/webp"><img src="img/icons/google.png" alt="Image google" /></picture>
+						</div>
+						<div class="block-company__image">
+							<picture><source srcset="img/icons/tokopedia.webp" type="image/webp"><img src="img/icons/tokopedia.png" alt="Image tokopedia" /></picture>
+						</div>
+						<div class="block-company__image">
+							<picture><source srcset="img/icons/tiket_com.webp" type="image/webp"><img src="img/icons/tiket_com.png" alt="Image tiket" /></picture>
+						</div>
+						<div class="block-company__image">
+							<picture><source srcset="img/icons/microsoft.webp" type="image/webp"><img src="img/icons/microsoft.png" alt="Image microsoft" /></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__some some">
+				<div class="some__container">
+					<div class="some__body">
+						<div class="some__content content-some">
+							<h3 class="content-some__title">
+								Some of the interiors that we provide for you
+							</h3>
+							<div class="contain_some__swiper swiper">
+								<div class="contain_some__wrapper swiper-wrapper">
+									<div class="contain_some__slide swiper-slide">
+										<div class="content-some__image-ibg">
+											<picture><source srcset="img/src/contain_some_big.webp" type="image/webp"><img src="img/src/contain_some_big.jpg" alt="Image" /></picture>
+											<div class="content-some__decor"></div>
+										</div>
+									</div>
+									<div class="contain_some__slide swiper-slide">
+										<div class="content-some__image-ibg">
+											<picture><source srcset="img/src/hero_rectangle.webp" type="image/webp"><img src="img/src/hero_rectangle.jpg" alt="Image" /></picture>
+											<div class="content-some__decor"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-some__arrows">
+								<div class="content-some__arrow-right">
+									<img src="img/icons/arrow_left.svg" alt="Icon arrow" />
+								</div>
+								<div class="content-some__arrow-left">
+									<img src="img/icons/arrow_left.svg" alt="Icon arrow" />
+								</div>
+							</div>
+						</div>
+						<div class="some__block block-some">
+							<article class="block-some__item">
+								<a class="block-some__image" href="#">
+									<picture><source srcset="img/src/contain_some_1.webp" type="image/webp"><img src="img/src/contain_some_1.jpg" alt="Image"></picture>
+								</a>
+								<div class="block-some__content" data-spollers>
+									<h4 class="block-some__title">Living Room</h4>
+									<p class="block-some__text">As one of the most-frequented spots in the home a living room sets the tone for the rest of the house.</p>
+									<button class="block-some__more" data-spoller>Read More</button>
+									<div class="block-some__text">The home office design ideas featured here are maximized for efficiency, optimized for space, and improvised for comfort by Spacejoy designers.</div>
+								</div>
+							</article>
+							<article class="block-some__item">
+								<a class="block-some__image" href="#">
+									<picture><source srcset="img/src/contain_some_2.webp" type="image/webp"><img src="img/src/contain_some_2.jpg" alt="Image"></picture>
+								</a>
+								<div class="block-some__content" data-spollers>
+									<h4 class="block-some__title">Bedroom</h4>
+									<p class="block-some__text"> Unleash your creativity to make not only comfortable but also a pleasant place to start and end your day.</p>
+									<button class="block-some__more" data-spoller>Read More</button>
+									<div class="block-some__text">The home office design ideas featured here are maximized for efficiency, optimized for space, and improvised for comfort by Spacejoy designers.</div>
+								</div>
+							</article>
+							<article class="block-some__item">
+								<a class="block-some__image" href="#">
+									<picture><source srcset="img/src/contain_some_3.webp" type="image/webp"><img src="img/src/contain_some_3.jpg" alt="Image"></picture>
+								</a>
+								<div class="block-some__content" data-spollers>
+									<h4 class="block-some__title">Office</h4>
+									<p class="block-some__text">The home office design ideas featured here are maximized for efficiency, optimized for space, and improvised for comfort by Spacejoy designers.</p>
+									<button class="block-some__more" data-spoller>Read More</button>
+									<div class="block-some__text">The home office design ideas featured here are maximized for efficiency, optimized for space, and improvised for comfort by Spacejoy designers.</div>
+								</div>
+							</article>
+						</div>
+					</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content content-footer">
+					<div class="content-footer__block">
+						<h3 class="content-footer__title">Subscribe to get <br> the last news about us</h3>
+						<p class="content-footer__sub-title">We recommended you to subscribe to our newspaper, enter you email to get our daily update about us</p>
+					</div>
+					<form action="#" method="get" class="content-footer__form">
+						<input autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="Enter you email address" class="content-footer__input">
+						<button type="submit" name="email" class="content-footer__button button">Subscribe</button>
+					</form>
+				</div>
+				<div class="footer__decor"></div>
+				<div class="footer__body body-footer">
+					<div class="body-footer__block">
+						<h4 class="body-footer__title">PT. ANDARA PANCA JAYA</h4>
+						<p class="body-footer__sub-title">© 2020. All rights reserved</p>
+					</div>
+					<nav class="body-footer__menu">
+						<ul class="body-footer__list">
+							<li class="body-footer__item">
+								<a href="#" class="body-footer__link">About Us</a>
+							</li>
+							<li class="body-footer__item">
+								<a href="#" class="body-footer__link">Partnership</a>
+							</li>
+							<li class="body-footer__item">
+								<a href="#" class="body-footer__link">Privacy Police</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<form id="form-1" action="#" method="get" class="popup__form">
+					<input autocomplete="off" required type="text" name="form[]" data-error="Помилка" placeholder="Пощук" class="popup__input">
+					<button type="sudmit" class="popup__button">
+						<img src="img/icons/search.svg" alt="Icon search">
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20231016222046"></script>
+</body>
+
+</html>
