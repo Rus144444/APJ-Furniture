@@ -804,6 +804,139 @@ body::after {
   max-height: 37.5rem;
 }
 
+.products__title {
+  color: #4B4B4B;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.02rem;
+  margin-bottom: 1.5rem;
+}
+
+.products__title-menu {
+  color: #4B4B4B;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.00875rem;
+}
+
+.products__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5625rem;
+  margin-bottom: 3.125rem;
+}
+
+.products__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+  grid-template-columns: repeat(4, auto);
+  gap: 1.25rem;
+}
+
+.products__content:target {
+  display: -ms-grid;
+  display: grid;
+}
+
+.body-product {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  max-width: 19.5rem;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 2.125rem 2.25rem 1.5rem;
+  border-radius: 8px;
+  display: none;
+}
+
+.body-product:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-product__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-product__sub-title {
+  color: rgba(51, 51, 51, 0.3);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.14px;
+}
+
+.body-product__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #4B4B4B;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.body-product__price {
+  color: #FFAD4C;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.00875rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  gap: 0.625rem;
+  border-radius: 2.25rem;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.no-webp .body-product-1{
+  background: url("../img/src/product_01.jpg") 100% 0 no-repeat; }
+
+.body-product-1 {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.no-webp .body-product-2{
+  background: url("../img/src/product_02.jpg") 100% 0 no-repeat; }
+
+.body-product-2 {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.no-webp .body-product-3{
+  background: url("../img/src/product_03.jpg") 100% 0 no-repeat; }
+
+.body-product-3 {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.no-webp .body-product-4{
+  background: url("../img/src/product_04.jpg") 100% 0 no-repeat; }
+
+.body-product-4 {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -1027,6 +1160,10 @@ body::after {
   .content-some__image-ibg {
     hight: 33.4375rem;
   }
+
+  .products {
+    padding-bottom: 4.6875rem;
+  }
 }
 
 @media (max-width: 20em) {
@@ -1140,6 +1277,10 @@ body::after {
 
   .content-some__image-ibg {
     hight: 8.4375rem;
+  }
+
+  .products {
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -1637,6 +1778,18 @@ body::after {
       hight: calc(8.4375rem + 25 * (100vw - 20rem) / 55);
     }
 }
+
+@supports (padding-bottom: clamp( 1.25rem , 0.0000000625rem  +  6.25vw , 4.6875rem )) {
+    .products {
+      padding-bottom: clamp( 1.25rem , 0.0000000625rem  +  6.25vw , 4.6875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , 0.0000000625rem  +  6.25vw , 4.6875rem )) {
+    .products {
+      padding-bottom: calc(1.25rem + 3.4375 * (100vw - 20rem) / 55);
+    }
+}
 }
 
 @media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 75em) {
@@ -1726,3 +1879,11 @@ body::after {
 }
 
 .webp .footer::after{ background: url(../img/src/footer_bg.webp) no-repeat; }
+
+.webp .body-product-1{ background: url(../img/src/product_01.webp) 100% 0 no-repeat; }
+
+.webp .body-product-2{ background: url(../img/src/product_02.webp) 100% 0 no-repeat; }
+
+.webp .body-product-3{ background: url(../img/src/product_03.webp) 100% 0 no-repeat; }
+
+.webp .body-product-4{ background: url(../img/src/product_04.webp) 100% 0 no-repeat; }
